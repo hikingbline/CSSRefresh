@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmet 写法</title>
+  <style>
+    div {
+      /* w加单位 */
+      width: 500px;
+      /* width: 500px; */
+      /* bgc加单位 */
+      background-color: #fff;
+      /* background-color: #fff; */
+
+      /* width: 500px;
+      height: 200px;
+      background-color: #fff; */
+      width: 500px;
+      height: 200px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- div -->
+  <div></div>
+  <!-- p.box -->
+  <p class="box"></p>
+  <div class="box"></div> 
+  <!-- div最特殊，只需要.color这种就行 -->
+  <p id="box"></p>
+
+  <!-- 同级别的 div + p -->
+  <div></div>
+  <p></p>
+
+  <!-- 父子级关系标签： div > p -->
+  <div>
+    <p></p>
+  </div>
+
+  <!-- span*3 -->
+  <span></span><span></span><span></span>
+
+  <!-- div{123456789} -->
+  <div>111</div>
+
+</body>
+</html>
