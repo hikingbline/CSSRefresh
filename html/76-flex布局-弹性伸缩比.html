@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flex布局-弹性伸缩比</title>
   <style>
+    /* 弹性伸缩比:控制弹性盒子的主轴方向的尺寸 */
     /* 默认情况下，主轴方向尺寸是靠内容撑开；侧轴默认拉伸 */
     .box {
       display: flex;
@@ -25,10 +26,12 @@
     }
 
     .box div:nth-child(2) {
+      /* 占用父级剩余尺寸的分数 */
       flex: 1;
     }
 
     .box div:nth-child(3) {
+       /* 占用父级剩余尺寸的分数 */
       flex: 2;
     }
   </style>

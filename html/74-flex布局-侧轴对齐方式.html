@@ -8,7 +8,9 @@
   <style>
     .box {
       display: flex;
-      /* 弹性盒子在侧轴方向没有尺寸才能拉伸 */
+      /* align-items:当前弹性容器内所有弹性盒子的侧轴对齐方式（给弹性容器设置） */
+      
+      /* 弹性盒子在侧轴(即.box div)方向没有尺寸才能拉伸 */
       /* align-items: stretch; */
 
       /* align-items: center; */
@@ -21,6 +23,7 @@
       border: 1px solid #000;
     }
 
+    /* align-self 单独控制某个弹性盒子的侧轴对齐方式（给弹性盒子设置） */
     /* 第二个div，侧轴居中对齐 */
     .box div:nth-child(2) {
       align-self: center;

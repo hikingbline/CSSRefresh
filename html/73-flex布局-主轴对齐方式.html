@@ -9,23 +9,29 @@
     .box {
       display: flex;
       /* justify-content: flex-start; */
+      /* 默认值，弹性盒子从起点开始依次排列 */
 
       /* justify-content: flex-end; */
+      /* 默认值：弹性盒子从终点开始依次排列 */
 
+
+      /* 后四个才是最常用的 */
       /* 居中 */
+      /* 弹性盒子沿主轴居中排列 */
       /* justify-content: center; */
 
       /* 父级剩余的尺寸分配成间距 */
 
       /* 弹性盒子之间的间距相等 */
+      /* 弹性盒子沿主轴均匀排列，空白间距均匀分配在弹性盒子之间 */
       /* justify-content: space-between; */
 
-      /* 间距出现在弹性盒子两侧 */
+      /* 弹性盒子沿主轴均匀排列，空白间距均匀分配在弹性盒子两侧 */
       /* 视觉效果：弹性盒子之间的间距是两端间距的2倍 */
-      /* justify-content: space-around; */
+      justify-content: space-around;
 
-      /* 各个间距都相等 */
-      justify-content: space-evenly;
+      /* 弹性盒子沿主轴均匀排列，弹性盒子与容器之间间距相等 */
+      /* justify-content: space-evenly; */
 
       height: 300px;
       border: 1px solid #000;

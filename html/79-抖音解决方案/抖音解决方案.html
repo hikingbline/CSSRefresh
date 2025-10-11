@@ -28,10 +28,11 @@
       display: flex;
       /* 弹性盒子换行 */
       flex-wrap: wrap;
-      /* 调整主轴对齐方式 */
+
+      /* 调整主轴对齐方式 让li之间有间距*/
       justify-content: space-between;
 
-      /* 调整 行对齐方式 */
+      /* 调整行对齐方式 让两行之间的li有间距 */
       align-content: space-between;
 
       padding: 90px 40px 90px 60px;
@@ -52,6 +53,7 @@
     .box .text h4 {
       line-height: 40px;
       font-size: 20px;
+      /* 不加粗就是400 */
       font-weight: 400;
       color: #333;
     }
@@ -64,6 +66,8 @@
 </head>
 <body>
   <div class="box">
+     <!-- ul>li{$}*77 -->
+     <!-- $符代表占位,用于一些有规律的li -->
     <ul>
       <li>
         <div class="pic">
