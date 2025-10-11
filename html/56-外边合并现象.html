@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外边距-合并现象</title>
+  <style>
+    .one {
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+      margin-bottom: 80px;
+    }
+
+    /* 外边距合并现象，垂直排列的兄弟元素，上下的margin值会合并，取较大的margin值生效 */
+    /* 只要设置一个盒子就可以了 */
+    .two {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">one</div>
+  <div class="two">two</div>
+</body>
+</html>

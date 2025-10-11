@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除浮动-overflow</title>
+  <style>
+    .father {
+      margin: 10px auto;
+      width: 1200px;
+      /* height: 300px; */
+      background-color: pink;
+
+      overflow: hidden;
+    }
+
+    .left {
+      float: left;
+      width: 200px;
+      height: 300px;
+      background-color: skyblue;
+    }
+
+    .right {
+      float: right;
+      width: 950px;
+      height: 300px;
+      background-color: orange;
+    }
+
+    .bottom {
+      height: 100px;
+      background-color: brown;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <div class="bottom"></div>
+</body>
+</html>
+
+<!-- 浮动：
+总结:
+浮动后的盒子是顶对齐的
+浮动后的盒子具备行内块的特点
+父级宽度不够，浮动的子级会换行
+浮动后的盒子会脱标
+
+清除浮动:子级浮动，父级没有高度，子级无法撑开父级的高度，会影响布局效果
+双伪元素法：浮动的本质是实现图文混排的效果
+现在都使用flex布局 -->
