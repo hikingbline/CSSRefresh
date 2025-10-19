@@ -11,10 +11,14 @@
         height: 100px;
         background-color: pink;
 
-        /* linear：匀速 */
+        /* animation:动画名称 动画时长必须有 */
+
+        /* linear：匀速 */ 
+        animation: change 1s linear;
         animation: change 1s linear;
 
         /* steps：分步动画，工作中，配合精灵图实现精灵动画 */
+        animation: change 1s steps(3);
         animation: change 1s steps(3);
 
         /* 如果有两个时间，第一个是动画时长，第二个是延迟时间 */

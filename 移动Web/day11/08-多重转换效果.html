@@ -20,15 +20,15 @@
       /* 鼠标移入box，图片边走边转 */
       .box:hover img {
         /* 先平移再旋转 */
-        transform: translate(600px) rotate(360deg);
+        /* transform: translate(600px) rotate(360deg); */
 
         /* 旋转会改变坐标轴向 */
         /* 多重转换：以第一种转换形态的坐标轴为准 */
         /* transform: rotate(360deg) translate(600px); */
 
-        /* 层叠性 */
-        /* transform: translate(600px);
-        transform: rotate(360deg); */
+        /* 相同属性的层叠性 */
+        transform: translate(600px);
+        transform: rotate(360deg);
       }
     </style>
   </head>

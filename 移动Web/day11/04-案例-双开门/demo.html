@@ -15,16 +15,19 @@
         /* 1. 布局：父子结构，父级是大图，子级是左右小图 */
         .father {
             display: flex;
+            /* 版心居中，上下多少无所谓，左右要设置为auto */
             margin: 0 auto;
             width: 1366px;
             height: 600px;
             background-image: url(./images/bg.jpg);
 
+            /* 隐藏图片 */
             overflow: hidden;
         }
 
         .father .left,
         .father .right {
+            /* 父级宽度的一半 */
             width: 50%;
             height: 600px;
             background-image: url(./images/fm.jpg);
@@ -34,7 +37,7 @@
 
         .father .right {
             /* right 表示的取到精灵图右面的图片 */
-            background-position: right 0;
+            background-position: right ;
         }
 
         /* 2. 鼠标悬停的效果：左右移动 */

@@ -4,34 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- 视口设置，用于响应式布局：
+         width=device-width：让页面宽度等于设备宽度
+         initial-scale=1.0：初始缩放比例为1（不缩放） -->
+    
+    <title>渐变线性</title>
+    <!-- 网页标题，显示在浏览器标签页上 -->
+    
     <style>
+      /* CSS样式定义区域，用于设置HTML元素的样式 */
       div {
-        width: 200px;
-        height: 200px;
-        background-color: green;
-        background-image: linear-gradient(
-          red,
-          green
-        );
-        background-image: linear-gradient(
-          to right,
-          red,
-          green
-        );
-        background-image: linear-gradient(
-          45deg,
-          red,
-          green
-        );
-        background-image: linear-gradient(
-          red 80%,
-          green
-        );
+        width: 200px;  /* 设置div的宽度为200像素 */
+        height: 200px; /* 设置div的高度为200像素 */
+        background-color: green; /* 设置背景色为绿色（后续被渐变覆盖） */
+        
+        /* 线性渐变背景：从顶部到底部，从红色过渡到绿色（被后续渐变覆盖） */
+        /* background-image: linear-gradient(red, green); */
+        
+        /* 线性渐变背景：从左到右，从红色过渡到绿色（被后续渐变覆盖） */
+        /* background-image: linear-gradient(to right, red, green); */
+        
+        /* 线性渐变背景：从左下角到右上角（45度角），从红色过渡到绿色（被后续渐变覆盖） */
+        /* background-image: linear-gradient(45deg, red, green); */
+        
+        /* 线性渐变背景：红色占80%高度，剩余20%从红色过渡到绿色（最终生效的渐变） */
+        /* 注：CSS中后定义的样式会覆盖前面同名样式，所以这行是最终显示的渐变 */
+        background-image: linear-gradient(red 80%, green);
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <!-- 页面主体内容，所有可见元素都在这里定义 -->
+    <div></div> <!-- 一个方块元素，会应用上面定义的CSS样式 -->
   </body>
 </html>
