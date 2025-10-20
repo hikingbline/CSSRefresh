@@ -11,21 +11,17 @@
       height: 100px;
       background-color: pink; 
       border-radius: 50%;
-      background-image: radial-gradient(
-        50px at center center,
-        red,
-        pink
-      );
-      background-image: radial-gradient(
-        50px 20px at center center,
-        red,
-        pink
-      );
-      background-image: radial-gradient(
-        50px at 50px 30px,
-        red,
-        pink 50%
-      );
+
+      /* 线性渐变： linear-gradient */
+      /* 径向渐变:  radial-gradient */
+      /* at center center ：圆心出现在水平垂直都在盒子里面居中的位置 */
+      
+      background-image: radial-gradient(50px at center center,red,pink);
+
+      /* 椭圆型的渐变 */
+      background-image: radial-gradient(50px 20px at center center,red,pink);
+
+      background-image: radial-gradient( 50px at 50px 30px, red, pink 50%);
     }
 
     button {
@@ -35,6 +31,7 @@
       border: 0;
       border-radius: 5px;
       color: #fff;
+      /* transparent 透明 */
       background-image: radial-gradient(30px at 30px 20px,rgba(255, 255, 255, 0.2),transparent);
     }
   </style>

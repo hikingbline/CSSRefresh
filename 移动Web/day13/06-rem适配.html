@@ -11,6 +11,7 @@
         padding: 0;
       }
 
+      /* HTML字号大小是视口宽度的10分之一 */
       /* 1. 使用媒体查询，给不同视口的屏幕设置不同的HTML字号 */
       /* @media (width:320px) {
         html {
@@ -39,7 +40,22 @@
 
   <body>
     <div class="box"></div>
+    <!-- flexible.js是手淘开发出的一个用来适配移动端的js库 -->
+    <!-- 它会自动给你加字号在html标签上 -->
 
     <script src="./js/flexible.js"></script>
   </body>
 </html>
+
+
+<!-- @media (width: 375px){
+  html {
+    font-size:37.5px;
+  }
+}
+
+.box{
+    width:5rem;
+    height:3rem;
+    background-color:pink;
+} -->

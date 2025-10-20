@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <title>透视效果</title>
   <style>
-    /* 视距：近大远小  近实远虚*/
-    /* 视距属性必须添加给 直接父级 */
+    /* 视距：人眼和电脑的距离 */
+    /* 透视效果：近大远小  近实远虚*/
+    /* 视距属性必须添加给 直接父级  不能跨级*/
     .father {
+      /* 建议取到800~1200之间 */
       perspective: 1000px;
-      /* perspective: 10000px;
-      perspective: 100px; */
     }
 
     .son {

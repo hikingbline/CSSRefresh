@@ -1,5 +1,7 @@
+//输出到CSS文件夹
 // out: ../css/
 
+//清除的代码
 @import "./base";
 
 // 定义变量
@@ -7,12 +9,17 @@
 
 // 头部
 header {
+  // 让都在一横排
   display: flex;
+  // 主轴对齐方式
   justify-content: space-between;
+  //然后左右内边距都一样
   padding: 0 (15 / @rootSize);
   height: (44 / @rootSize);
   // background-color: pink;
+  //让垂直居中 设置行高等于区域的高
   line-height: (44 / @rootSize);
+  
   .icon-left {
     font-size: (22 / @rootSize);
   }

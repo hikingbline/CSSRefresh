@@ -110,7 +110,7 @@ p {
   color: #40404c;
 }
 
-/* TODO 1. 箭头旋转 */
+/* 1. 箭头旋转 */
 .x-header-nav .nav-item .icon-down {
   display: inline-block;
   height: 16px;
@@ -119,6 +119,7 @@ p {
 }
 
 .x-header-nav .nav-item:hover .icon-down {
+  /* 旋转180度 */
   transform: rotate(-180deg);
 }
 

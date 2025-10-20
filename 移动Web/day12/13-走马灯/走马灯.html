@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>走马灯</title>
+    <!-- 无缝动画的制作过程 -->
+    <!-- 复制开头动画到结尾 -->
     <style>
       * {
         padding: 0;
@@ -26,6 +28,7 @@
         overflow: hidden;
       }
 
+      /* 匀速运动：linear */
       .box ul {
         display: flex;
         animation: move 6s infinite linear;
@@ -49,6 +52,7 @@
   <body>
     <div class="box">
       <ul>
+         <!-- 无缝动画的制作过程 -->
         <li><img src="./images/1.jpg" alt="" /></li>
         <li><img src="./images/2.jpg" alt="" /></li>
         <li><img src="./images/3.jpg" alt="" /></li>
@@ -56,6 +60,7 @@
         <li><img src="./images/5.jpg" alt="" /></li>
         <li><img src="./images/6.jpg" alt="" /></li>
         <li><img src="./images/7.jpg" alt="" /></li>
+
         <!-- 替身：填补显示区域的露白 -->
         <li><img src="./images/1.jpg" alt="" /></li>
         <li><img src="./images/2.jpg" alt="" /></li>

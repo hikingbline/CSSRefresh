@@ -30,7 +30,7 @@
 
         transform-style: preserve-3d;
 
-        /* 为了看到橙色和绿色的移动过程，给立方体添加旋转 */
+        /* 为了看到橙色和绿色的移动过程，给立方体添加旋转 和案例效果没有关系*/
         /* transform: rotateX(-20deg) rotateY(30deg); */
       }
 
@@ -54,6 +54,7 @@
 
       .nav li a:last-child {
         background-color: orange;
+        /* 旋转之后轴向会改变 */
         transform: rotateX(90deg) translateZ(20px);
       }
 
@@ -66,6 +67,7 @@
   <body>
     <div class="nav">
       <ul>
+        <!-- 2个小a是立方体的面，那么li就是代表立方体 -->
         <li>
           <a href="#">首页</a>
           <a href="#">Index</a>

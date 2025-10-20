@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>立体呈现</title>
-    <!-- 设置元素的子元素是位于3D空间中还是平面中 -->
+    <!-- 设置元素子元素是位于3D空间中还是平面中 -->
+
     <style>
       .cube {
         position: relative;
@@ -15,6 +16,8 @@
         /* background-color: pink; */
         transition: all 2s;
 
+        /* 默认值是flat 立体效果是 preserve-3d */
+        /* tfs */
         transform-style: preserve-3d;
 
         /* 旋转与案例效果无关，用来看前后移动的效果 */
@@ -47,6 +50,7 @@
   <body>
     <div class="cube">
       <div class="front">前面</div>
+      <!-- 定位后来者居上 -->
       <div class="back">后面</div>
     </div>
   </body>
