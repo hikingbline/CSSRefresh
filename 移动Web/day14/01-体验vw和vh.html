@@ -11,13 +11,17 @@
         padding: 0;
       }
 
+      /* vw 和 vh 是相对单位，但它是相对于视口的尺寸计算结果 */
+      /* vw 和 vh 都是等于百分之一的视口宽度 */
       /* vw 和 vh 是相对视口宽高计算结果，可以直接实现移动端适配效果 */
-      /* .box {
+      /* 参考视口的宽
+        .box {
         width: 50vw;
         height: 30vw;
         background-color: pink;
       } */
 
+      /* 参考视口的高 */
       .box {
         width: 50vh;
         height: 30vh;

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>媒体查询</title>
     <style>
+      /* 响应式布局的媒体查询是根据于某个区间段的宽度值 */
       /* 屏幕宽度小于等于768，网页背景色是粉色 → max-width */
+      /* 最大值也只能是768px */
+      /* 从大到小写 */
       @media (max-width: 768px) {
         body {
           background-color: pink;
@@ -15,6 +18,8 @@
 
 
       /* 屏幕宽度大于等于1200，网页背景色是绿色 → min-width */
+      /* 从小到大写 */
+      /* 最小值也只能是1200px */
       @media (min-width:1200px) {
         body {
           background-color: green;
